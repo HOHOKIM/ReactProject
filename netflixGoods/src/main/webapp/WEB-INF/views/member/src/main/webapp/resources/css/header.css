@@ -1,0 +1,74 @@
+body {
+	height: 100px;
+	margin: 0;
+}
+
+#head {
+	background: linear-gradient(to bottom, black, transparent);
+	height: 100px;
+	color: white;
+	font-size: 28px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	position: absoulte;
+	top: 0;
+	width: 100%;
+	z-index: 1000; /* 헤더가 다른 요소 위에 나타나도록 설정 */
+}
+
+a {
+	margin-right: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	border-bottom: 2px solid red;
+}
+
+#loginBtn {
+	background-color: #181818;
+	color: white;
+	padding: 10px;
+	margin-right: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#loginBtn2 {
+	background-color: #181818;
+	color: white;
+	padding: 10px;
+	margin-right: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.flex-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.flex-item {
+	flex: 1;
+	text-align: center;
+}
+
+.flex-item:first-child {
+	text-align: left;
+}
+
+.flex-item:last-child {
+	text-align: right;
+}
+
+.logo {
+	width: 120px;
+	margin-left: 50px;
+	cursor: pointer;
+	}
+	
+

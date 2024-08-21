@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="p">
+	<select id="product_list" resultType="vo.ProductVO">
+		SELECT * FROM products
+		ORDER BY P_IDX
+	</select>
+
+
+	<insert id="product_insert" parameterType="vo.ProductVO">
+		INSERT INTO products
+		(P_IDX, NAME, DESCRIPTION, PRICE, STOCK, CATEGORY,
+		IS_SELLABLE,FILENAME)
+
+		VALUES (SEQ_PRODUCT_IDX.nextVal,
+		#{name, jdbcType=VARCHAR},
+		#{description,jdbcType=VARCHAR},
+		#{price,
+		jdbcType=INTEGER},
+		#{stock,jdbcType=INTEGER},
+		#{category,
+		jdbcType=VARCHAR},
+		#{is_sellable,jdbcType=INTEGER},
+		#{filename,jdbcType=VARCHAR}
+		
+		)
+
+	</insert>
+
+
+
+	<delete id="product_delete">
+		DELETE FROM products WHERE P_IDX = #{P_IDX}
+	</delete>
+
+	<select id="product_selectone" resultType="vo.ProductVO">
+		SELECT * FROM products
+		WHERE P_IDX = #{P_IDX}
+	</select>
+
+	<update id="product_update" parameterType="map">
+    UPDATE products
+    SET name = #{vo.name, jdbcType=VARCHAR},
+        description = #{vo.description, jdbcType=VARCHAR},
+        price = #{vo.price, jdbcType=INTEGER},
+        stock = #{vo.stock, jdbcType=INTEGER},
+        category = #{vo.category, jdbcType=VARCHAR}
+    WHERE p_idx = #{P_IDX}
+</update>
+</mapper>
+
+
+
+
+
+
+
+
