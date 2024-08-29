@@ -1,5 +1,3 @@
-스프링 프로젝트입니다 
-
 #  <img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f5a5.png" width=20 height=20>프로젝트 소개
 넷플릭스와 비슷한 영화 랭킹 사이트 구현하였습니다
 
@@ -102,10 +100,12 @@ API를 활용한 데이터 페칭 및 상태 관리 라이브러리(React Query)
 ![캡처10](https://github.com/user-attachments/assets/8be5292b-5299-4ae4-ac30-0d8a594ae7ce)
 
 # 영화 게시판 및 관람평
+
 ## 관람평
 ![20](https://github.com/user-attachments/assets/1193ab1e-005d-48d6-bd3f-51f372ed3474)
 ![21](https://github.com/user-attachments/assets/a42372b7-a25d-4aea-bba0-6a9f7207a26b)
 ![22](https://github.com/user-attachments/assets/6c8893aa-3060-4e2c-8eb3-50935c710457)
+
 ## 게시판
 ![25](https://github.com/user-attachments/assets/942de643-0d64-4e86-9219-833943877677)
 ![26](https://github.com/user-attachments/assets/007989a1-cf38-4b0d-acde-6ab48164b9b3)
