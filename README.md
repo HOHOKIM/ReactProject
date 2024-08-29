@@ -4,7 +4,7 @@
 # <img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f558.png" width=20 height=20>개발기간
 -2024 06.31 ~ 2024 .08.07
 # <img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f46c.png" width=20 height=20>멤버 구성
-- 김도형 : css, 검색기능, 즐겨찾기
+- 김도형 : css, 홈페이지, 검색기능, 즐겨찾기
 - 최윤서 : css, 게시판, 관람평
 - 박영범 : css, 회원가입, 로그인
 - 홍은빈 : 계좌결제 구현
