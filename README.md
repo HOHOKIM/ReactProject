@@ -92,7 +92,7 @@ API를 활용한 데이터 페칭 및 상태 관리 라이브러리(React Query)
 
 
 
-# 구독 결제구현
+# 토스 api를 사용한 모의 결제구현
 ![캡처6](https://github.com/user-attachments/assets/95641a2f-3a61-4de9-a9c4-6a2a3563d0f8)
 ![캡처7](https://github.com/user-attachments/assets/449843fd-7c7a-4fc9-b974-721ccc214518)
 ![캡처8](https://github.com/user-attachments/assets/08c1a75e-cc09-46d2-9f91-b115bff83974)
@@ -113,4 +113,5 @@ API를 활용한 데이터 페칭 및 상태 관리 라이브러리(React Query)
 ![28](https://github.com/user-attachments/assets/c2cfb29c-eb67-400a-b7bb-179b58cfa530)
 ![29](https://github.com/user-attachments/assets/ec5383cb-3cf7-4904-9be6-d52e33bcea44)
 <br>
+
 
