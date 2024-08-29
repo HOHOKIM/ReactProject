@@ -20,32 +20,37 @@ IMDB 영화정보 사이트를 이용해
 영화의 감상평 구현
 <hr>
 4. 제공기능
-메인화면
-![77de9b81-093f-43ad-ac48-0532bb6f758f](https://github.com/user-attachments/assets/2cedc9d4-6ab2-4802-8831-498deae7c640)
 
+메인화면
+![asd](https://github.com/user-attachments/assets/459a08b7-d49b-426f-896b-bfd36c412b12)
+<br>
 로그인: 사용자 개인의 정보를 DB에 저장
 ![image (1)](https://github.com/user-attachments/assets/b2427b44-bb3d-42d5-8cde-915cf6652bcf)
-
+<br>
 회원가입: 회원 기능 구현
 ![image (2)](https://github.com/user-attachments/assets/163e4302-0006-4a84-89ef-a278596ab7b2)
-
+<br>
 영화의정보: 포스터,줄거리,출연진,개봉일 등등 정보를 불러낼수있음 
 ![image (14)](https://github.com/user-attachments/assets/625722af-ef25-4493-ab67-cebdc4a9d7fd)
+<br>
 <hr>
 즐겨찾기: 영화가 맘에들면 다음에 볼수있도록 저장이가능
+
 ![image (12)](https://github.com/user-attachments/assets/80e4420d-f58c-4cea-b040-3443000dd723)
 <br>
 ![image (13)](https://github.com/user-attachments/assets/ff876da2-4aa2-4b5a-a8a7-0cd30699e90b)
-
+<br>
 검색: IMDB에 저장 되어있는 영화,드라마,배우들을 검색이 가능하게 구현
 <br>
 ![image (15)](https://github.com/user-attachments/assets/943c3c70-80b3-4687-b45f-225eb0643d8d)
 ![image (16)](https://github.com/user-attachments/assets/3b0517d6-a7f3-46bd-96c4-980a8ed5b402)
 ![image (17)](https://github.com/user-attachments/assets/6f755f6a-7aa8-4caa-993a-6018366ba7f7)
 ![image (7)](https://github.com/user-attachments/assets/b14ad715-b019-4034-b07c-d50fc3cd7d58)
+<br>
 (프로필사진이 없는경우) 대체이미지 구현 
 
 유투브API를사용해 예고편 실행 가능
+<br>
 ![image (10)](https://github.com/user-attachments/assets/10b2b4bf-ed3d-4656-b069-c58ac01762ff)
 
 구독 결제구현
