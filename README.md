@@ -114,4 +114,95 @@ API를 활용한 데이터 페칭 및 상태 관리 라이브러리(React Query)
 ![29](https://github.com/user-attachments/assets/ec5383cb-3cf7-4904-9be6-d52e33bcea44)
 <br>
 
+# 트러블 슈팅
+  
+### 프로필, 포스터  미등록 
+
+
+- 문제상황
+  <br>
+  프로필이나 포스터를 등록 하지 않은 영화, 배우의 사진이 깨져서 나옴
+  <br>
+- 원인
+  <br>
+  서버에 포스터,프로필 이 등록되지 않음
+  <br>
+- 해결
+  <br>
+  서버에 포스터, 프로필이 blank 일때 준비된 기본 사진으로 등록 
+  <br>
+- 코드
+ 
+ ```javascript
+return (
+  <SearchContainer>
+    <h4 style={{ color: "white" }}>검색 결과 "{keyword}"</h4>
+    {searchResults.length > 0 ? (
+      <>
+        <AnimatePresence>
+          {movies.length > 0 && (
+            <Section>
+              <h3 style={{ color: "white" }}>영화</h3>
+              <Box>
+                {movies.map((movie) => (
+                  <Item key={movie.id} onClick={() => onBoxClicked(movie)}>
+                    <Poster
+                      src={
+                        movie.poster_path
+                          ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                          : defaultposter
+                      }
+                    />
+                    <Name>{movie.title}</Name>
+                  </Item>
+                ))}
+              </Box>
+            </Section>
+          )}
+
+          {tvSeries.length > 0 && (
+            <Section>
+              <h3 style={{ color: "white" }}>TV 시리즈</h3>
+              <Box>
+                {tvSeries.map((tv) => (
+                  <Item key={tv.id} onClick={() => onBoxClicked(tv)}>
+                    <Poster
+                      src={
+                        tv.poster_path
+                          ? `https://image.tmdb.org/t/p/w500${tv.poster_path}`
+                          : defaultposter
+                      }
+                    />
+                    <Name>{tv.name}</Name>
+                  </Item>
+                ))}
+              </Box>
+            </Section>
+          )}
+
+          {persons.length > 0 && (
+            <Section>
+              <h1 style={{ color: "white" }}>인물</h1>
+              <Box>
+                {persons.map((person) => (
+                  <Item key={person.id} onClick={() => onBoxClicked(person)}>
+                    <Poster
+                      src={
+                        person.profile_path
+                          ? `https://image.tmdb.org/t/p/w500${person.profile_path}`
+                          : defaultPeople
+                      }
+                      alt={person.name}
+                    />
+                    <Name>{person.name}</Name>
+                  </Item>
+                ))}
+              </Box>
+            </Section>
+          )}
+        </>
+      ) : null}
+    </>
+  </SearchContainer>
+);
 
